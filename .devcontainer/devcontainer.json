@@ -1,0 +1,21 @@
+{
+  "name": "Android Studio",
+  "image": "mcr.microsoft.com/devcontainers/android:1-ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "17"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "kotlin",
+        "android-adb",
+        "gradle",
+        "xml"
+      ]
+    }
+  },
+  "forwardPorts": [5000],
+  "postCreateCommand": "echo 'Android Studio ready!'"
+}
